@@ -93,53 +93,46 @@ body{
   }
 }
 
-#fondquibouge{
-  transition: 0.3s;
-  position: absolute;
-  
-  top: 0;
-  left: 0;
+main#index{
+  background-color: $c-fond;
+  padding:5vw 5vh;
   height: 100vh;
   width: 100%;
-  z-index: 100;
-  .piX{
-    position: absolute;
-    border: none;
-    padding: 2.5px;
-    border-radius: 25%;
-    background-color: $c-contraste-fond;
-    animation-timing-function:cubic-bezier(1,.02,.77,.38);
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    top: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  font-size: 1.2em;
+  p{
+  width: 100%;
+  text-align:center;
+  line-height: 3;
   }
-
-  @for $i from 1 through 10 {
-    .piXHo#{$i} {
-      left: $i * 9%;
-      -webkit-animation-name: "headPx#{$i}"; /* Safari 4.0 - 8.0 */
-      -webkit-animation-duration: 3s - $i/7; /* Safari 4.0 - 8.0 */
-      animation-name: "headPx#{$i}";
-      animation-duration: 3s - $i/7;
+  a{
+    margin:2em;
+    color: $c-primary;
+    text-decoration: none;
+    font-size: 1.5em;
+    position: relative;
+    &::before{
+      content: "";
+      width: 0;
+      height: 2px;
+      background-color: $c-primary;
+      transition: 0.3s;
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translate(-50%,0);
     }
-    .piXGo#{$i} {
-      top: $i * 9%;
-      left:0;
-      -webkit-animation-name: "headPxg#{$i}"; /* Safari 4.0 - 8.0 */
-      -webkit-animation-duration: 3s - $i/7; /* Safari 4.0 - 8.0 */
-      animation-name: "headPxg#{$i}";
-      animation-duration: 3s - $i/7;
-    }
-    .piXDr#{$i} {
-      top: $i * 9%;
-      right:0;
-      -webkit-animation-name: "headPxd#{$i}"; /* Safari 4.0 - 8.0 */
-      -webkit-animation-duration: 3s - $i/7; /* Safari 4.0 - 8.0 */
-      animation-name: "headPxd#{$i}";
-      animation-duration: 3s - $i/7;
+    &:hover::before{
+      width: 90%;
     }
   }
 }
+
+
 #fond{
   position: fixed;
   width: 100%;
@@ -329,10 +322,8 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
-    background-color: $c-fond;
     transition: 0.3s;
     display: none;
-    opacity: 0;
     .competence-item{
       padding: 1em;
       text-align: center;

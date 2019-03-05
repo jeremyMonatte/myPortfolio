@@ -234,8 +234,5 @@
 <script type="text/javascript" src="src/js/jquery.js"></script>
 <script type="text/javascript" src="src/js/script.js"></script>
 <script type="text/javascript" src="src/js/canvasGraph.js"></script>
-<script type="text/javascript" src="src/js/canvasHD.js"></script>
-
-
 </body>
 </html>

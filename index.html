@@ -1,17 +1,32 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
-<head> 
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-131478056-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio d'un Développeur Web">
-    <meta name="keywords" content="Portfolio, Jérémy, Monatte, Front-End, MMI, Développement, Web, HTML, CSS, XML, JavaScript">
-    <meta name="author" content="Jérémy Monatte">
+      gtag("config", "UA-131478056-1");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio d'un Développeur Web" />
+    <meta
+      name="keywords"
+      content="Portfolio, Jérémy, Monatte, Front-End, MMI, Développement, Web, HTML, CSS, XML, JavaScript"
+    />
+    <meta name="author" content="Jérémy Monatte" />
     <title>Portfolio Jérémy Monatte</title>
-    <link rel="stylesheet" href="dist/css/normalize.css"> 
-    <link rel="stylesheet" href="src/scss/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="src/scss/style.css" />
 
     <meta property="og:url" content="http://jeremy-monatte.tk/" />
     <meta property="og:type" content="profile" />
@@ -19,20 +34,25 @@
     <meta property="og:description" content="Portfolio d'un Développeur Web" />
     <meta property="og:image" content="img/moi.jpg" />
     <meta property="og:locale" content="fr_FR" />
-</head> 
-<body>
-<link rel="shortcut icon" type="image/x-icon" href="img/favicon.svg">
-<div id="chargement">Chargement...<span id="chargement-infos"></span></div>
-	<div id="container">
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo|Thasadith|Playfair+Display"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.svg" />
 
-    <img src="img/casanostra.jpg" alt="">
-    <img src="img/cdsa.jpg" alt="">
-    <img src="img/creaPro.jpg" alt="">
-    <img src="img/dataVign.jpg" alt="">
-    <img src="img/gmail.svg" alt="">
-    <img src="img/logoPurpleReine.jpg" alt="">
-    <div style="height:200px; background:url(http://img.hebus.com/hebus_2012/12/14/1355494682_14173.jpg); background-size: 25%;">background-image</div></div>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <div id="load">
+      <div id="çatouuuuurne"></div>
+      <h5>Chargement ...</h5>
+    </div>
+    <main  role="main" id="index">
+        <p>Ce site peut demander quelques ressources. Si vous penser ne pas disposer d'assez de ressources (téléphones portables & autres ordinateurs médiévaux), je vous conseille d'opter pour la version light. Autrement, profitez à fond de la version complète (￣▽￣)ノ<p>
+            <a href="homeLight.php">La version light</a>
+            <a href="home.php">La version complète</a>
+    </main>
+    <script type="text/javascript" src="src/js/jquery.js"></script>
     <script type="text/javascript" src="src/js/script.js"></script>
-</body>
+    <script type="text/javascript" src="src/js/canvas.js"></script>
+  </body>
 </html>
