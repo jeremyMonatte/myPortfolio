@@ -1,0 +1,9 @@
+<?php
+    $hote='mysql-jeremy-monatte.alwaysdata.net';
+    $port='3306';
+    $nom_bd='jeremy-monatte_port';
+    $identifiant='169365';
+    $mot_de_passe='AN1h,hc*JMS.AD';
+    $encodage='utf8';
+    $debug=true;
+?>
