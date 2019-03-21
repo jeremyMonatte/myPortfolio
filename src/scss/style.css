@@ -50,6 +50,7 @@ hr::after {
 body {
   color: #fff;
   overflow-x: hidden;
+  background-color: #000d1a;
 }
 
 #load {
@@ -523,7 +524,6 @@ header .gobot:hover {
   -webkit-box-align: space-between;
       -ms-flex-align: space-between;
           align-items: space-between;
-  background-color: #fff;
   padding-bottom: 2vh;
   font-size: 0.5em;
 }

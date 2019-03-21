@@ -51,6 +51,7 @@ hr{
 body{
   color: #fff;
   overflow-x: hidden;
+  background-color: $c-fond;
 }
 #load{
   position:fixed;
@@ -405,7 +406,6 @@ header{
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: space-between;
-  background-color: #fff;
   padding-bottom: 2vh;
   font-size: 0.5em;
   a{

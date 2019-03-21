@@ -16,6 +16,12 @@
     $resultats= $connection->query($detailProj);
     $detailProjet=$resultats->fetch(PDO::FETCH_OBJ);
     $resultats->closeCursor();
+    session_start();
+    if(empty($_SESSION["version"])){
+        $url="index.html";
+    }else{
+        $url=$_SESSION["version"].'#works';
+    }
 ?>
 
 <!DOCTYPE html>
@@ -63,7 +69,7 @@
                 echo('<a href="projet.php?proj='.$idprojPrec.'">⟨</a>');
             }
         ?>
-        <a href="home.php#works" class="main-a">Accueil</a>
+        <a href="<?=$url?>" class="main-a">Accueil</a>
         <?php
             if($detailProjet->Id_Projet>1){
                 echo('<a href="projet.php?proj='.$idprojSuiv.'">⟩</a>');
